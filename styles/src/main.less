@@ -1,0 +1,183 @@
+@import "_variables";
+@import "_mixins";
+
+html {
+  font-size: 100%;
+}
+body{
+  color: white;
+  font-family: 'Titillium Web', sans-serif;
+}
+img {
+  max-width: 100%;
+}
+.clear:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Reusable Title */
+@import "sections/_title";
+
+/* Reusable container */
+@import "sections/_item-container";
+
+/* Landing Area */
+.landing {
+  background-color: #87509c;
+}
+
+//NAV
+@import "sections/_navigation";
+
+//MAIN AREA
+@import "sections/_welcome";
+
+//SERVICES
+@import "sections/_services";
+
+//TEAM SECTION
+@import "sections/_team";
+
+//SKILLS
+@import "sections/_skills";
+
+//PORTOFOLIO
+@import "sections/_portofolio";
+
+//TESTIMONIALS
+@import "sections/_testimonials";
+
+//CONTACT
+@import "sections/_contact";
+
+//FOOTER
+@import "sections/_footer";
+
+/* Layout */
+.container{
+  width: 1200px;
+    margin: 0 auto;
+}
+
+@media all and (max-width: 1200px) {
+  .container {
+      width: 100%;
+      padding: 0 2.5%;
+  }
+  #menu-button{
+    display: none;
+  }
+  
+}
+@media all and (max-width: 1060px) {
+  .testimonials .item-container{
+    width: 100%;
+  }
+  .item-container {
+    width: 50%;
+    padding: 0 10%;
+  }
+  .portofolio-image-section .item-container{
+    width: 100%;
+  }
+  .image-container {
+    padding: 0 25%;
+  }
+  html {
+    font-size: 90%;
+  }
+  .team-member-circle{
+    height: 6.25rem;
+    width: 6.25rem;
+  }
+}
+@media all and (max-width: 700px) {
+
+  html {
+    font-size: 80%;
+  }
+
+  .contact-sect.left{
+    width: 100%;
+    display: block;
+    margin: 0;
+    margin-bottom: 1rem;
+  }
+  .contact-sect.right{
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+  .services h3 {
+    width: 75%;
+  }
+  .nav-text {
+    width: 100%;
+    display: block;
+    margin: 0.3125rem 0px;
+  }
+  .menu{
+    display: none;
+  }
+  #menu-button{
+    margin: 0.5rem;
+    display: inline-block;
+    margin-top: 0.15rem;
+  }
+  #toggle:checked + .menu {
+    display: block;
+    padding-bottom: 20px;
+  }
+  nav img {
+    padding: 0px 0.5rem;
+  }
+  .main-button{
+    width: 30%;
+  }
+  .main-text{
+    padding-top: 0rem;
+  }
+
+}
+@media all and (max-width: 650px) {
+  .item-container {
+    width: 100%;
+    padding: 0 15%;
+  }
+  #menu-button{
+    margin: 1rem;
+    display: inline-block;
+    margin-top: 0.5rem;
+  }
+  .footer a{
+    margin: 1rem 0.7rem;
+  }
+}
+@media all and (max-width: 450px) {
+  html{
+    font-size: 70%;
+  }
+  .image-container{
+    padding: 0 20%;
+  }
+  .nav-text{
+    width: 100%;
+    display: block;
+    margin: 0.3125rem 0px;
+  }
+  nav img {
+    width: 70%;
+    margin-left: 0rem;
+    padding-left: 0rem;
+  }
+  #menu-button{
+    margin-top: 0rem;
+  }
+}
+@media all and (max-width: 338px) {
+  html{
+    font-size: 65%;
+  }
+}

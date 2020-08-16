@@ -1,0 +1,51 @@
+.section(@color,@background-color,@after){
+  text-align: center;
+  float: left;
+  width: 100%;
+  padding-top: 0.5rem;
+  padding-bottom: 3.125rem;
+	background-color: @background-color;
+	h2:after {
+	background-color: @after;
+	}
+}
+.button(@default-color,@border-color,@hover-color,@active-color){
+	//MIXIN STUFF
+  background-color: @default-color;
+  border-bottom-color: @border-color;
+  &hover{
+    background-color: @hover-color;
+  }
+  &active{
+    background-color: @active-color;
+  }
+	/*Transform Settings*/
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	/*Text Settings*/
+	text-decoration: none;
+	text-align: center;
+	color:#fff;
+	/*Border Settings*/
+	border-radius: 0.25rem;
+	border-bottom: 0.25rem;
+	border-bottom-style: solid;
+	transition: background-color 0.2s ease;
+}
+.my-text-input(){
+    font-size: @text-font-size;
+    border-radius: 5px;
+    background-color: #263a6d;
+    border-style: none;
+    outline-style:none;
+    box-shadow:none;
+    border-color:transparent;
+    margin: 0 auto;
+    transition: box-shadow 0.5s;
+    font-family: 'Titillium Web', sans-serif;
+    
+    &focus{
+      box-shadow: 0 2px 3px rgba(0,0,0,0.10), 0 3px 6px rgba(0,0,0,0.10);
+    }
+}

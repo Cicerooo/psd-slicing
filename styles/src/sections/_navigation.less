@@ -1,0 +1,64 @@
+/*
+NAVIGATION BAR
+*/
+
+label{
+  float: right;
+  line-height: 2.8125rem;
+  font-size: 2.25rem;
+  display: none;
+  cursor: pointer;
+  margin: 0px 1.25rem;
+  border-radius: 50%;
+  width: 2.7rem;
+  height: 2.7rem;
+  -moz-user-select:-moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  transition: background-color 0.2s ease;
+  &:hover {
+    background-color: @text-light;
+  }
+  &:active {
+    background-color: @text-dark;
+  }
+}
+#toggle{
+  display: none;
+}
+nav{
+  padding-top: 1.25rem;
+  width: 100%;
+  text-align: center;
+  margin-top: 0px;
+  height: 4.375rem;
+  a {
+    float: left;
+    text-decoration: none;
+    color: white;
+  }
+  img {
+    padding-left: 0.5rem;
+  }
+}
+.nav-text{
+  float: right;
+  padding: 0.625rem 0.625rem;
+  line-height: 1;
+  margin: 0.3125rem 0px;
+  border-radius: 0.25rem;
+  transition: background-color 0.22s ease;
+  &:hover {
+    background-color: @text-light;
+  }
+  &:active {
+    background-color: @text-dark;
+  }
+}
+.checkbox{
+  display: none;
+  width: 2.5rem;
+  height: 2rem;
+  margin: 0px auto;
+  cursor: pointer;
+}
